@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "monero_data")
 @DataDescriptor(isReady = false, description = "Monero", dataId = 4)
-public class MoneroData {
+public class Monero {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

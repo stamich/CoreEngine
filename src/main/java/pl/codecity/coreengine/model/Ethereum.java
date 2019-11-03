@@ -1,14 +1,11 @@
 package pl.codecity.coreengine.model;
 
-import lombok.Data;
-
 import javax.persistence.*;
 
-@Data
 @Entity
-@Table(name = "bitcoin_cash_data")
-@DataDescriptor(isReady = false, description = "Bitcoin", dataId = 1001)
-public class BitcoinCashData {
+@Table(name = "ethereum_data")
+@DataDescriptor(isReady = false, description = "Ethereum", dataId = 2)
+public class Ethereum {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

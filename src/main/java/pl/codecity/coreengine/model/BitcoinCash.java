@@ -5,9 +5,9 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "bitcoin_data")
-@DataDescriptor(isReady = false, description = "Bitcoin", dataId = 1)
-public class BitcoinData extends AbstractDomainObject<Long> {
+@Table(name = "bitcoin_cash_data")
+@DataDescriptor(isReady = false, description = "Bitcoin", dataId = 1001)
+public class BitcoinCash extends AbstractDomainObject<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,6 @@ public class BitcoinData extends AbstractDomainObject<Long> {
 
     // Getter and setter
 
-    @Override
     public Long getId() {
         return id;
     }
@@ -47,8 +46,10 @@ public class BitcoinData extends AbstractDomainObject<Long> {
         this.trend = trend;
     }
 
+    //
+
     @Override
     public String print() {
-        return "Bitcoin: " + " " + getVolumeDaily() + " " + getTrend();
+        return "Bitcoin: " + " " + getVolumeDaily() + " trend: " + getTrend();
     }
 }

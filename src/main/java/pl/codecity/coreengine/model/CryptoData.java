@@ -1,7 +1,5 @@
 package pl.codecity.coreengine.model;
 
-import lombok.Data;
-import lombok.Getter;
 import org.hibernate.annotations.SortNatural;
 
 import javax.persistence.*;

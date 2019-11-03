@@ -3,9 +3,9 @@ package pl.codecity.coreengine.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tether_data")
-@DataDescriptor(isReady = false, description = "Tether", dataId = 5)
-public class TetherData {
+@Table(name = "litecoin_data")
+@DataDescriptor(isReady = false, description = "LiteCoin", dataId = 3)
+public class LiteCoin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
